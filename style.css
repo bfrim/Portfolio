@@ -3,7 +3,6 @@
 	padding: 0;
 	list-style: none;
 	text-decoration: none;
-	
 }
 
 html {
@@ -13,29 +12,36 @@ html {
 }
 
 .header {
-    position: fixed;
+	position: relative;
     top: 0;
 	width: 100%;
-	height: 50%;
+	height: 50vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.name {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	color: white;
 }
 
 .hero {
 	width: 100%;
-	height: 100vh;
+	height: 50vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
 .planets {
-	width: 80%;
-	height: 200vh;
+	width: 100%;
+	height: 100%;
 	background-image: url("./ressources/system.png");
-	background-position: bottom;
+	background-position: top;
 	background-repeat: no-repeat;
-	background-size: 50vw;	
+	background-size: 100vh;	
 }
