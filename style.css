@@ -48,7 +48,7 @@ html {
 .interests {
 	position: relative;
 	top: 40vh;
-	height: 125vh;
+	height: 100vh;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -60,7 +60,7 @@ html {
 
 .inner-inerests {
 	height: 100%;
-	width: 75%;
+	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
@@ -71,8 +71,8 @@ html {
 }
 
 .interests-sections {
-	height: 30vh;
-	width: 90%;
+	height: 25vh;
+	width: 50%;
 	background-color: rgba(22, 22, 22, 0.6);
 	border-radius: 2vh;
 	filter: drop-shadow(0px 0px 1.5vh rgb(0, 0, 0));
@@ -87,6 +87,8 @@ html {
 
 .card {
 	/* border: 0.2vh solid #ffffff; */
+	background-color: transparent;
+	border: none;
 	cursor: pointer;
 	position: relative;
 	border-radius: 2vh;
@@ -113,7 +115,7 @@ html {
 	);
 	background-position: 0% 0%;
 	background-size: 300% 300%;
-	border-radius: 2vh;
+	border-radius: 3vh;
 	content: "";
 	height: 100%;
 	left: 0px;
@@ -184,8 +186,8 @@ html {
 		font-size: 5vw
 	}
 
-	.inner-inerests {
-		width: 100%;
+	.interests-sections {
+		width: 80%;
 	}
 }
 
