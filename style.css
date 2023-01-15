@@ -48,7 +48,7 @@ html {
 .interests {
 	position: relative;
 	top: 40vh;
-	height: 125vh;
+	height: 100vh;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -60,7 +60,7 @@ html {
 
 .inner-inerests {
 	height: 100%;
-	width: 75%;
+	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
@@ -70,8 +70,8 @@ html {
 }
 
 .interests-sections {
-	height: 30vh;
-	width: 90%;
+	height: 25vh;
+	width: 50%;
 	background-color: rgba(22, 22, 22, 0.6);
 	border-radius: 2vh;
 	filter: drop-shadow(0px 0px 1.5vh rgb(0, 0, 0));
@@ -84,6 +84,8 @@ html {
 
 .card {
 	/* border: 0.2vh solid #ffffff; */
+	background-color: transparent;
+	border: none;
 	cursor: pointer;
 	position: relative;
 	border-radius: 2vh;
@@ -93,10 +95,19 @@ html {
 
 .card:hover:before {
 	background-position: 100% 100%;
-	transform: scale(1.08, 1.03);
+	transform: scale(1.05, 1.0);
 }
 
 .card:hover > .card-content {
+	background-position: -10% -0%;
+}
+
+.card:active:before {
+	background-position: 100% 100%;
+	transform: scale(1, 1);
+}
+
+.card:active > .card-content {
 	background-position: -10% 0%;
 }
 
@@ -104,13 +115,13 @@ html {
 	background: linear-gradient(
 	  130deg, 
 	  transparent 0% 33%, 
-	  rgb(182, 143, 16) 66%, 
-	  rgb(144, 175, 6) 83.5%, 
-	  rgb(43, 175, 175) 100%
+	  rgb(142, 145, 7) 66%, 
+	  rgb(131, 182, 13) 83.5%, 
+	  rgb(18, 73, 175) 100%
 	);
 	background-position: 0% 0%;
 	background-size: 300% 300%;
-	border-radius: 2vh;
+	border-radius: 3vh;
 	content: "";
 	height: 100%;
 	left: 0px;
@@ -181,8 +192,8 @@ html {
 		font-size: 5vw
 	}
 
-	.inner-inerests {
-		width: 100%;
+	.interests-sections {
+		width: 80%;
 	}
 }
 
