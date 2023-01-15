@@ -63,7 +63,7 @@ html {
 	background-image: url("./ressources/system.png");
 	background-repeat: no-repeat;
 	background-position: top;
-	background-size: 100vh;
+	background-size: 90vh;
 }
 
 .interests {
@@ -75,8 +75,8 @@ html {
 	align-items: center;
 	justify-content: center;
 	background-color: rgba(39, 39, 39, 0.3);
-	-webkit-backdrop-filter: blur(5vh);
-  	backdrop-filter: blur(1vh);
+	-webkit-backdrop-filter: blur(2vh);
+  	backdrop-filter: blur(2vh);
 }
 
 .inner-inerests {
@@ -117,7 +117,7 @@ html {
 
 .card:hover:before {
 	background-position: 100% 100%;
-	transform: scale(1.0, 1.05);
+	transform: scale(1.02, 1.05);
 }
 
 .card:hover > .card-content {
