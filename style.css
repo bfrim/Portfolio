@@ -66,6 +66,7 @@ html {
 	justify-content: space-evenly;
 	flex-direction: column;
 	color: white;
+	font-family: 'Poppins';
 	font-size: 2vh;
 }
 
@@ -78,6 +79,8 @@ html {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	color: rgb(192, 192, 192);
+	font-family: 'Righteous';
 }
 
 
@@ -93,20 +96,20 @@ html {
 
 .card:hover:before {
 	background-position: 100% 100%;
-	transform: scale(1.08, 1.03);
+	transform: scale(1.0, 1.05);
 }
 
 .card:hover > .card-content {
-	background-position: -10% 0%;
+	background-position: -6% 0%;
 }
 
 .card:before {
 	background: linear-gradient(
 	  130deg, 
 	  transparent 0% 33%, 
-	  rgb(182, 143, 16) 66%, 
-	  rgb(144, 175, 6) 83.5%, 
-	  rgb(43, 175, 175) 100%
+	  rgb(0, 0, 0) 66%, 
+	  rgb(49, 49, 49) 83.5%, 
+	  rgb(96, 97, 97) 100%
 	);
 	background-position: 0% 0%;
 	background-size: 300% 300%;
