@@ -80,11 +80,66 @@ html {
 	justify-content: space-between;
 }
 
-.button {
+
+
+.card {
+	/* border: 0.2vh solid #ffffff; */
+	cursor: pointer;
+	position: relative;
+	border-radius: 2vh;
+	width: 100%;
+	height: 100%;
+}
+
+.card:hover:before {
+	background-position: 100% 100%;
+	transform: scale(1.08, 1.03);
+}
+
+.card:hover > .card-content {
+	background-position: -10% 0%;
+}
+
+.card:before {
+	background: linear-gradient(
+	  130deg, 
+	  transparent 0% 33%, 
+	  var(--g1) 66%, 
+	  var(--g2) 83.5%, 
+	  var(--g3) 100%
+	);
+	background-position: 0% 0%;
+	background-size: 300% 300%;
+	content: "";
+	height: 100%;
+	left: 0px;
+	pointer-events: none;
+	position: absolute;
+	top: 0px;
+	transition: background-position 350ms ease, transform 350ms ease;
+	width: 100%;
+	z-index: 1;
+}
+
+.card-content {
+	background-image: radial-gradient(
+	  rgba(255, 255, 255, 0.2) 8%, 
+	  transparent 8%
+	);
+	background-position: 0% 0%;
+	background-size: 5vmin 5vmin;
+	height: calc(100% - 10vmin);
+	padding: 5vmin;
+	position: relative;
+	transition: background-position 350ms ease;
+	width: calc(100% - 10vmin);
+	z-index: 2;
+}
+
+/* .button {
 	background-color: transparent;
-	border: 0.2vh solid #e4b83e;
+	border: 0.2vh solid #ffffff;
 	color: white;
-	/* padding: 14vh 30vw; */
 	height: 30vh;
 	width: 100%;
 	text-align: left;
@@ -97,12 +152,12 @@ html {
 	transition-duration: 0.4s;
 	cursor: pointer;
 	border-radius: 2vh;
-}
+} */
 
-.button1:hover {
+/* .button1:hover {
 	background-color: #e4b83e;
 	color: white;
-}
+} */
 
 .programming {
 	
