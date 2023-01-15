@@ -5,57 +5,63 @@
 	text-decoration: none;
 }
 
+body {
+	background-color: black;
+}
+
 html {
-	font-family: 'Open Sans', sans-serif;
 	background: rgb(0,0,0);
-	background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(1,1,32,1) 100%);
+	font-family: 'Poppins', sans-serif;
+	font-family: 'Righteous', cursive;
 }
 
 .header {
-	position: relative;
+	position: static;
     top: 0;
 	width: 100%;
-	height: 50vh;
+	height: 45vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 }
 
 .name {
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	font: 'Righteous';
+	position: static;
 	font-size: 3vh;
 	text-align: center;
 	color: white;
 }
 
-@media (max-width: 1000px) {
-	.name {
-		font-size: 5vw
-	}
-}
-
-.hero {
+.planets {
+	position: fixed;
+	top: 45vh;
 	width: 100%;
 	height: 100vh;
+	background-image: url("./ressources/system.png");
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: 100vh;
+}
+
+.interests {
+	position: relative;
+	top: 45vh;
+	height: 150vh;
+	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.planets {
-	width: 100%;
+.inner-inerests {
 	height: 100%;
-	background-image: url("./ressources/system.png");
-	background-position: top;
-	background-repeat: no-repeat;
-	background-size: 100vh;	
-}
-
-.my-interests {
-
+	width: 75%;
+	background-color: rgba(39, 39, 39, 0.8);
+	-webkit-backdrop-filter: blur(40px);
+  	backdrop-filter: blur(20px);
+	border-radius: 4vh;
 }
 
 .programming {
@@ -69,3 +75,93 @@ html {
 .music {
 
 }
+
+
+
+
+
+@media (max-width: 1000px) {
+	.name {
+		font-size: 5vw
+	}
+
+	.inner-inerests {
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Orbitron:700);
+
+/* Stars 
+------------------------------------- */
+
+#space, .stars {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.stars {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+  background-image: 
+    radial-gradient(1px 1px at 20px 30px, #eee, rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 40px 70px, #fff, rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 50px 160px, #ddd, rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 90px 40px, #fff, rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 130px 80px, #fff, rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 160px 120px, #ddd, rgba(0,0,0,0));
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  animation: zoom 40s infinite;
+  opacity: 0;
+}
+
+.stars:nth-child(1) {
+  background-position: 50% 50%;
+  animation-delay: 0s;
+}
+.stars:nth-child(2) {
+  background-position: 20% 60%;
+  animation-delay: 10s;
+}
+.stars:nth-child(3) {
+  background-position: -20% -30%;
+  animation-delay: 20s;
+}
+.stars:nth-child(4) {
+  background-position: 40% -80%;
+  animation-delay: 30s;
+}
+.stars:nth-child(5) {
+  background-position: -20% 30%;
+  animation-delay: 39s;
+}
+
+@keyframes zoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+    animation-timing-function: ease-in;
+  } 
+  85% {
+    opacity: 1;
+    transform: scale(2.8);
+    animation-timing-function: linear;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(3.5);
+  }
+}
+
