@@ -33,12 +33,12 @@ html {
 	width: 100%;
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	flex-direction: column;
+	justify-content: space-evenly;
+	flex-direction: row;
 	background-color: black;
 	color:rgb(192, 192, 192);
 	text-decoration: none !important;
-	font-size: 2vh;
+	font-size: 1.5vh;
 }
 
 .name {
@@ -85,7 +85,7 @@ html {
 	justify-content: space-evenly;
 	flex-direction: column;
 	color: white;
-	font-family: 'Poppins';
+	font-family: 'Righteous';
 	font-size: 2vh;
 	background-color: rgba(27, 27, 27, 0.3);
 	-webkit-backdrop-filter: blur(3vh);
@@ -207,6 +207,10 @@ html {
 @media (max-width: 1000px) {
 	.name {
 		font-size: 5vw
+	}
+
+	.footer {
+		flex-direction: column;
 	}
 
 	.interests {
